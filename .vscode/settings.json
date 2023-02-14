@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/24e0ce83-00c2-4a50-9cd5-df5ec11569c6/appservices/subscriptions/24e0ce83-00c2-4a50-9cd5-df5ec11569c6/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/Dog-Review",
+    "appService.deploySubpath": "."
+}
