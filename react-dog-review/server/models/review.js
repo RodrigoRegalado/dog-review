@@ -33,7 +33,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   }, {
     sequelize,
-    modelName: 'Reviews',
+    modelName: 'Review',
+    tableName: 'Reviews'
   });
   return Reviews;
 };
