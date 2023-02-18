@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Display a map on a webpage</title>
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
     <style>
@@ -12,16 +12,23 @@
     </style>
     </head>
     <body>
-    <div id="map"></div>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+    
+        <div id="map"></div>
+    
     <script>
-      mapboxgl.accessToken = 'pk.eyJ1IjoianVsZWlhbnJlbnRlcmlhIiwiYSI6ImNsZTBlcjZsZjFhYmszdWxnazZ4bXNseGcifQ.wgpobfiXKMn4MMiYiHOgVQ';
-    const map = new mapboxgl.Map({
+      mapboxgl.accessToken = 'pk.eyJ1IjoianVsZWlhbnJlbnRlcmlhIiwiYSI6ImNsZTBmZnd6aDFhc28zb29sZXJkZm1obGoifQ.7hhYxIiM4pgIU3iswqAG0g';
+      
+      const map = new mapboxgl.Map({
     container: 'map', // container ID
     // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
     style: 'mapbox://styles/mapbox/streets-v12', // style URL
-    center: [-74.5, 40], // starting position [lng, lat]
+    center: [-117.224121, 39.876019], // starting position [lng, lat]
     zoom: 9 // starting zoom
     });
+
+
     </script>
   </body>
 </html>
