@@ -2,37 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Display a map on a webpage</title>
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width">
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
-
-    <style>
-    body { align-items: center; margin: 0; padding: 80px; }
-    #map { align-items: center; width: 50%; height: 750px; margin: 1% 0 0 15%; padding-left: 60px; justify-content: center  ; }
-    </style>
-    </head>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-nGI9jeG2RpGcpcGenVkZbOxJt4f3Aoc"></script>
+    <script src="http://www.google.com/jsapi?key=AIzaSyC-nGI9jeG2RpGcpcGenVkZbOxJt4f3Aoc" type="text/javascript"></script>
+    
+</script>
+  </head>
     <body>
-      <noscript>You need to enable JavaScript to run this app.</noscript>
-        <div id="root"></div>
-       
-    
-        <div id="map"></div>
-    
-    <script>
-      mapboxgl.accessToken = 'pk.eyJ1IjoianVsZWlhbnJlbnRlcmlhIiwiYSI6ImNsZTBmZnd6aDFhc28zb29sZXJkZm1obGoifQ.7hhYxIiM4pgIU3iswqAG0g';
       
-      const map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v12', 
-    center: [-117.224121, 39.876019], 
-    zoom: 9 
-    });
+      <input type="text" title="Real Time Search" name="searchbox"/>
+      <input type="button" id="searchbtn" value="Search" onclick="search(searchbox.value)"/>
+      <div class="data" id="web-content"></div>
 
-    <searchbar/>
+      <div id="map"></div>
+      
+      <style>
+      
+        #map {
+          height: 100%;
+        }
+        html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+      </style>
+       <script type="text/javascript">google.load('search', '1'); </Script>
+        
 
-    </script>
-  </body>
+    </body>
 </html>
 
 
