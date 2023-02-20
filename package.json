@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/RodrigoRegalado/dog-review/issues"
   },
-  "homepage": "https://github.com/RodrigoRegalado/dog-review#readme"
+  "homepage": "https://github.com/RodrigoRegalado/dog-review#readme",
+  "dependencies": {
+    "@mapbox/search-js-react": "^1.0.0-beta.14"
+  }
 }
